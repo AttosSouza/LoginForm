@@ -1,0 +1,198 @@
+/* ==== Reset Básico === */
+
+* {
+        /* Modelo de caixa */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bdc3c7, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul li {
+        /* Remove as bolinhas da lista */
+    list-style: none;
+}
+
+img {
+        /* Torna a imagem responsiva */
+    display: block;
+    max-width: 100%;
+}
+
+a {
+        /* Remove a linha sublinhada do link */
+    text-decoration: none;
+        /* Visual */
+    color: #000;
+}
+
+
+/* === Container === */
+.container {
+        /* Modelo de caixa */
+    max-width: 940px;
+    margin: 120px auto;
+        /* Grid */
+    display: grid;
+    grid-template-columns: repeat(2, 29.375em);
+        /* Visual */
+    background: #000;
+}
+
+
+/* === Segunda coluna === */
+.col-text {
+    background: #fff;
+}
+
+.description {
+        /* Espaçamento interno, 25px cima/baixo, 40px esquerda/direita */
+    padding: 25px 40px;
+}
+
+.description h1 {
+        /* Tipografia */
+    font-size: 2.25em;
+    text-transform: capitalize;
+    text-align: center;
+        /* Margem 15px para baixo */
+    margin-bottom: 15px;
+        /* Visual */
+    color: #000;
+}
+
+/* Formulario */
+.input-control {
+        /* Posicionamento */
+    position: relative;
+}
+
+.input-control input {
+        /* Modelo de caixa */
+    width: 100%;
+    height: 45px;
+    margin: 15px 0;
+    padding: 10px 40px;
+    border: none;
+        /* Tipografia */
+    font-size: 0.875em;
+        /* Visual */
+    outline: none;
+    background: #ECECEC;
+}
+
+.input-control i {
+        /* Posicionamento */
+    position: absolute;
+    left: 0;
+    top: 30px;
+        /* Espaçamento interno, 0px cima/baixo, 10px esquerda/direita */
+    padding: 0 10px;
+        /* Visual */
+    color: #000;
+}
+
+.rememberBox {
+        /* FlexBox */
+    display: flex;
+    justify-content: space-between;
+        /* Margem, 10px para cima */
+    margin-top: 15px;
+}
+
+.remember {
+        /* FlexBox */
+    display: flex;
+    align-items: center;
+}
+
+.remember label {
+        /* Tipografia */
+    font-size: 0.875em;
+        /* Margem, 10px para esquerda */
+    margin-left: 10px;
+}
+
+.password {
+        /* Tipografia */
+    font-size: 0.875em;
+    font-weight: bold;
+        /* Visual */
+    color: #000;
+}
+
+.password:hover {
+    color: grey;
+}
+
+.btn {
+        /* Modelo de caixa */
+    width: 100%;
+    height: 35px;
+    margin: 25px 0;
+    border: none;
+        /* Tipografia */
+    text-transform: uppercase;
+    font-weight: bold;
+        /* Visual */
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+
+.btn:hover {
+    background: -webkit-linear-gradient(to right, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* === Rede Social === */
+.socialBox p {
+        /* Alinhamento */
+    text-align: center;
+        /* Margem, 15px para baixo */
+    margin-bottom: 15px;
+}
+
+.socialMedia {
+        /* FlexBox */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.links a {
+    display: block;
+    text-align: center;
+        /* Modelo de caixa */
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    padding: 10px 0;
+        /* Visual */
+    color: #fff;
+    background: #000;
+}
+
+/* === Estiliza o campo de erro e sucesso do formulário === */
+.input-control.sucess input {
+    border-bottom: 4px solid greenyellow;
+}
+
+.input-control.error input {
+    border-bottom: 4px solid #000;
+}
+
+.input-control .error {
+    font-size: 12px;
+    height: 10px;
+    color: #000;
+}
+
+
+
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Metadado-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Titulo (Aparece na aba do navegador)-->
+    <title>Login Form</title>
+
+    <!--CSS ()-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- FontAwesome (Biblioteca que adiciona icones) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="col-img">
+            <div>
+                <img src="img/nick-nice-gPm8h3DS1s4-unsplash.jpg" alt="Background">
+            </div>
+        </div>
+
+        <div class="col-text">
+            <div class="description">
+
+                <h1>login</h1>
+
+                <form id="form">
+
+                    <div class="input-control">
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <i class="fas fa-envelope"></i>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <i class="fas fa-key"></i>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="rememberBox">
+
+                        <div class="remember">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember-me</label>
+                        </div>
+
+                            <a class="password" href="#">Forgot your password ?</a>
+
+                    </div>
+
+                    <button class="btn">login</button>
+             
+                </form>
+
+                <div class="socialBox">
+
+                    <p>Or login with</p>
+
+                    <div class="socialMedia">
+
+                        <div class="links">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+
+                        <div class="links">
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+
+                        <div class="links">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
